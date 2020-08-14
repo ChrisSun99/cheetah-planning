@@ -18,6 +18,6 @@ class Locomotion : public DataReadCtrl<T> {
   void computeCommand(LegControllerCommand<T>* cmd, LegControllerData<T>* data); 
 
  private:
-  DataProcessor* data_processor;
+  DataProcessor data_processor;
 };
 

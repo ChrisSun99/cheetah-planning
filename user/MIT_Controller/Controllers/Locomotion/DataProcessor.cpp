@@ -31,6 +31,7 @@ Eigen::VectorXd convertJson2Xd(Eigen::VectorXd jointPos, Json::Value &js);
 SVec<double> convertJson2SVec(SVec<double> arr, Json::Value &j1, Json::Value &j2);
 
 DataProcessor::DataProcessor()  {
+  std::cout << "canoot print" << std::endl;
   std::ifstream file_in("/home/chris/Desktop/latest/Cheetah-Software/user/MIT_Controller/ros_output.json", std::ifstream::binary);
   if (!file_in.is_open()){
        std::cout << "Error opening file"<< std::endl;
