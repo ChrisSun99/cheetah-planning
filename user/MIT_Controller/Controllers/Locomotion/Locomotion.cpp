@@ -3,9 +3,9 @@
 
 template <typename T>
 Locomotion<T>::Locomotion(DataReader* data_reader,float _dt) : DataReadCtrl<T>(data_reader, _dt) {
-    std::cout <<"initial a data processor!" << std::endl;
+    // std::cout <<"initial a data processor!" << std::endl;
 
-  data_processor = DataProcessor();
+  data_processor = new DataProcessor();
 
 }
 
