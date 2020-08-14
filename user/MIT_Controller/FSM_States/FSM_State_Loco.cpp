@@ -49,9 +49,53 @@ void FSM_State_Loco<T>::onEnter() {
 
   this->_data->_gaitScheduler->gaitData._nextGait = GaitType::TROT;
   locomotion_ctrl_->SetParameter();
-  locomotion_ctrl_->_update_joint_command();
+  // locomotion_ctrl_->_update_joint_command();
 }
 
+
+template <typename T>
+void FSM_State_Loco<T>::run() {
+
+// Command Computation
+  if (_b_running) {
+    if (!_Initialization()) {
+      ComputeCommand();
+    }
+  } else {
+    _SafeCommand();
+  }
+
+  ++_count;
+  _curr_time += this->_data->controlParameters->controller_dt;
+
+}
+
+template <typename T>
+void FSM_State_Loco<T>::_SafeCommand() {
+  for (int leg = 0; leg < 4; ++leg) {
+    for (int jidx = 0; jidx < 3; ++jidx) {
+      this->_data->_legController->commands[leg].tauFeedForward[jidx] = 0.;
+      this->_data->_legController->commands[leg].qDes[jidx] = this->_data->_legController->datas[leg].q[jidx];
+      this->_data->_legController->commands[leg].qdDes[jidx] = 0.;
+    }
+  }
+}
+
+template <typename T>
+void FSM_State_Loco<T>::ComputeCommand() {
+  
+
+  if(this->_data->controlParameters->use_rc){
+    if(this->_data->_desiredStateCommand->rcCommand->mode == RC_mode::BACKFLIP_PRE){
+      locomotion_ctrl_->OneStep(_curr_time, true, this->_data->_legController->commands);
+    }else{
+      locomotion_ctrl_->OneStep(_curr_time, false, this->_data->_legController->commands);
+    }
+
+  }else{
+    locomotion_ctrl_->OneStep(_curr_time, false, this->_data->_legController->commands);
+  }
+}
 
 
 template<typename T>
@@ -97,10 +141,10 @@ bool FSM_State_Loco<T>::locomotionSafe() {
 /**
  * Calls the functions to be executed on each control loop iteration.
  */
-template <typename T>
-void FSM_State_Loco<T>::run() {
-  locomotion_ctrl_->computeCommand(this->_data->_legController->commands, this->_data->_legController->datas);
-}
+// template <typename T>
+// void FSM_State_Loco<T>::run() {
+//   // locomotion_ctrl_->computeCommand(this->_data->_legController->commands, this->_data->_legController->datas);
+// }
 
 
 template <typename T>

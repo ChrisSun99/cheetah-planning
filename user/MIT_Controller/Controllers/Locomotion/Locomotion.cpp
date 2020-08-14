@@ -152,37 +152,62 @@ void Locomotion<T>::_update_joint_command() {
 }
 
 
+
 template <typename T>
-void Locomotion<T>::computeCommand(LegControllerCommand<T>* cmd, LegControllerData<T>* data) {
-  // LegControllerCommand<T> * cmd = this->_data->_legController->commands;
-  //Vec4<T> contact = data._stateEstimator->getResult().contactEstimate;
+void Locomotion<T>::OneStep(float _curr_time, bool b_preparation, LegControllerCommand<T>* command) {
+  DataCtrl::_state_machine_time = _curr_time - DataCtrl::_ctrl_start_time;
 
-  for (size_t leg(0); leg < cheetah::num_leg; ++leg) {
-    cmd[leg].zero();
-    for (size_t jidx(0); jidx < cheetah::num_leg_joint; ++jidx) {
-      cmd[leg].tauFeedForward[jidx] = DataCtrl::_jtorque[cheetah::num_leg_joint * leg + jidx];
-      cmd[leg].qDes[jidx] = DataCtrl::_des_jpos[cheetah::num_leg_joint * leg + jidx];
-      cmd[leg].qdDes[jidx] = DataCtrl::_des_jvel[cheetah::num_leg_joint * leg + jidx];
+  DataCtrl::_b_Preparation = b_preparation;
+  _update_joint_command();
 
-        cmd[leg].kpJoint(jidx, jidx) =  DataCtrl::_Kp_joint[jidx];
-        cmd[leg].kdJoint(jidx, jidx) =  DataCtrl::_Kd_joint[jidx];
-       
+  for (int leg = 0; leg < 4; ++leg) {
+    for (int jidx = 0; jidx < 3; ++jidx) {
+      command[leg].tauFeedForward[jidx] = DataCtrl::_jtorque[3 * leg + jidx];
+      command[leg].qDes[jidx] = DataCtrl::_des_jpos[3 * leg + jidx] + 0 * _curr_time;
+      command[leg].qdDes[jidx] = DataCtrl::_des_jvel[3 * leg + jidx];
+      command[leg].kpJoint(jidx, jidx) = DataCtrl::_Kp_joint[jidx];
+      command[leg].kdJoint(jidx, jidx) = DataCtrl::_Kd_joint[jidx];
+      std::cout << "tau" <<  "leg:"  << leg << "link :" << jidx << command[leg].tauFeedForward[jidx] << std::endl;
+      std::cout << "qDes" <<  "leg:"  << leg << "link :" << jidx << command[leg].qDes[jidx] << std::endl;
+      std::cout << "qdDes" <<  "leg:"  << leg << "link :" << jidx << command[leg].qdDes[jidx] << std::endl;
+
     }
   }
-
-
-  // Knee joint non flip barrier
-  for(size_t leg(0); leg<4; ++leg){
-    if(cmd[leg].qDes[2] < 0.3){
-      cmd[leg].qDes[2] = 0.3;
-    }
-    if(data[leg].q[2] < 0.3){
-      T knee_pos = data[leg].q[2]; 
-      cmd[leg].tauFeedForward[2] = 1./(knee_pos * knee_pos + 0.02);
-    }
-  }
-
 }
+
+
+
+// template <typename T>
+// void Locomotion<T>::computeCommand(LegControllerCommand<T>* cmd, LegControllerData<T>* data) {
+//   // LegControllerCommand<T> * cmd = this->_data->_legController->commands;
+//   //Vec4<T> contact = data._stateEstimator->getResult().contactEstimate;
+
+//   for (size_t leg(0); leg < cheetah::num_leg; ++leg) {
+//     cmd[leg].zero();
+//     for (size_t jidx(0); jidx < cheetah::num_leg_joint; ++jidx) {
+//       cmd[leg].tauFeedForward[jidx] = DataCtrl::_jtorque[cheetah::num_leg_joint * leg + jidx];
+//       cmd[leg].qDes[jidx] = DataCtrl::_des_jpos[cheetah::num_leg_joint * leg + jidx];
+//       cmd[leg].qdDes[jidx] = DataCtrl::_des_jvel[cheetah::num_leg_joint * leg + jidx];
+
+//         cmd[leg].kpJoint(jidx, jidx) =  DataCtrl::_Kp_joint[jidx];
+//         cmd[leg].kdJoint(jidx, jidx) =  DataCtrl::_Kd_joint[jidx];
+       
+//     }
+//   }
+
+
+//   // Knee joint non flip barrier
+//   for(size_t leg(0); leg<4; ++leg){
+//     if(cmd[leg].qDes[2] < 0.3){
+//       cmd[leg].qDes[2] = 0.3;
+//     }
+//     if(data[leg].q[2] < 0.3){
+//       T knee_pos = data[leg].q[2]; 
+//       cmd[leg].tauFeedForward[2] = 1./(knee_pos * knee_pos + 0.02);
+//     }
+//   }
+
+// }
 
 
 template class Locomotion<double>;
