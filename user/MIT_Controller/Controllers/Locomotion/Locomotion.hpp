@@ -11,7 +11,7 @@ class Locomotion : public DataReadCtrl<T> {
   Locomotion(DataReader*, float _dt);
   virtual ~Locomotion();
 
-  virtual void OneStep(float _curr_time, bool b_preparation, LegControllerCommand<T>* command);
+  // virtual void OneStep(float _curr_time, bool b_preparation, LegControllerCommand<T>* command);
 
 
   virtual void _update_joint_command();

@@ -21,11 +21,12 @@
 class DataProcessor {
  public:
   DataProcessor();
+  EIGEN_MAKE_ALIGNED_OPERATOR_NEW
   Eigen::VectorXd ComputeJointVelocities(float t);
-  // Vec12<double> ComputeJointTorques(float t);
+  Vec12<double> ComputeJointTorques(float t);
   void WriteAsDatFile(Eigen::MatrixXd result, int i);
-  // Mat3<T> computeLegJacobian(Quadruped<T>& quad, Vec3<T>& q, Mat3<T> J, int leg);
-  // Vec3<T> computeLegPosition(Quadruped<T>& quad, Vec3<T>& q, Vec3<T> p, int leg);
+  Mat3<T> computeLegJacobian(Quadruped<T>& quad, Vec3<T>& q, Mat3<T> J, int leg);
+  Vec3<T> computeLegPosition(Quadruped<T>& quad, Vec3<T>& q, Vec3<T> p, int leg);
   
 
 private:

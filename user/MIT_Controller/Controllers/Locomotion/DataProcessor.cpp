@@ -107,11 +107,11 @@ DataProcessor::DataProcessor()  {
   f2 = convertJson2Vec(foot1, opt["data"][to_string(t)]["Contact forces"]["1"]); 
   f3 = convertJson2Vec(foot2, opt["data"][to_string(t)]["Contact forces"]["2"]); 
   f4 = convertJson2Vec(foot3, opt["data"][to_string(t)]["Contact forces"]["3"]); 
-  for (int i = 0; i < 3; i++) {
-    footForces[i] = f1[i];
-    footForces[i + 3] = f2[i];
-    footForces[i + 6] = f3[i];
-    footForces[i + 9] = f4[i];
+  for (int in = 0; in < 3; in++) {
+    footForces[in] = f1[in];
+    footForces[in + 3] = f2[in];
+    footForces[in + 6] = f3[in];
+    footForces[in + 9] = f4[in];
   }
   
   WriteAsDatFile(result, i);
@@ -119,11 +119,11 @@ DataProcessor::DataProcessor()  {
   t = t + 0.002;
   }
   
-  // result.resize(1, result.size());
-  // Eigen::VectorXd d(Eigen::Map<Eigen::VectorXd>(result.data(),result.cols()*result.rows()));
-  // FILE* f = fopen("/home/chris/Desktop/latest/Cheetah-Software/config/locomotion.dat","w");
-  // fwrite(d.data(), sizeof(float), result.size(), f);
-  // fclose(f);
+  result.resize(1, result.size());
+  Eigen::VectorXd d(Eigen::Map<Eigen::VectorXd>(result.data(),result.cols()*result.rows()));
+  FILE* f = fopen("/home/chris/Desktop/latest/Cheetah-Software/config/locomotion.dat","w");
+  fwrite(d.data(), sizeof(float), result.size(), f);
+  fclose(f);
 
   
 }
@@ -229,9 +229,8 @@ DataProcessor::WriteAsDatFile(Eigen::MatrixXd result, int i) {
   //   cerr << "ERROR: FILE COULD NOT BE OPENED." << endl;
   //   exit(1);
   // }
-      std::cout << "i: " << i << std::endl;
 
-  
+
     result(i, 0) = x.bodyPosition[0];
     result(i, 1) = x.bodyPosition[1];
     result(i, 2) =  x.bodyPosition[2];
@@ -292,18 +291,17 @@ DataProcessor::WriteAsDatFile(Eigen::MatrixXd result, int i) {
     result(i, 57) =footForces[9];
     result(i, 58) =footForces[10] ;
     result(i, 59) =footForces[11] ;
-    std::cout << "done" << std::endl;
   
 
-  // file_out << (float)x.bodyPosition[0] << " " << (float)x.bodyPosition[1] << " " << (float)x.bodyPosition[2] <<  " " << (float)x.bodyOrientation[0] << " " << x.bodyOrientation[1] << " " << x.bodyOrientation[2] <<  " ";
-  // file_out << (x.q)[0] << " " << (x.q)[1] << " " << (x.q)[2] << " " << (x.q)[3] << " " << (x.q)[4] << " " << (x.q)[5] << " " << (x.q)[6] <<  " " << (x.q)[7] <<  " " << (x.q)[8] <<  " " << (x.q)[9] << " " << (x.q)[10] << " " << (x.q)[11] << " ";
-  // file_out << x.bodyVelocity[0] <<  " " << x.bodyVelocity[1] << " " << x.bodyVelocity[2] <<  " " << x.bodyOrientation[0] << " " << x.bodyOrientation[1] << " " << x.bodyOrientation[2] << " ";
-  // file_out << (x.qd)[0] << " " << (x.qd)[1] << " " << (x.qd)[2] << " " << (x.qd)[3] << " " << (x.qd)[4] << " " << (x.qd)[5] << " " << (x.qd)[6] << " " << (x.qd)[7] << " " << (x.qd)[8] << " " << (x.qd)[9] << " " << (x.qd)[10] << " " << (x.qd)[11] << " ";
-  // file_out << jointTorques[0] << " " << jointTorques[1] << " " << jointTorques[2] << " " << jointTorques[3] << " " << jointTorques[4] << " " << jointTorques[5] << " " << jointTorques[6] << " " << jointTorques[7] << " ";
-  // file_out << jointTorques[8] << " " << jointTorques[9] << " " << jointTorques[10] << " " << jointTorques[11] << " ";
-  // file_out << footForces[0] << " " << footForces[1] << " " << footForces[2] << " " << footForces[3] << " " << footForces[4] << " " << footForces[5] << " " << footForces[6] << " " << footForces[7] << " " << footForces[8] << " ";
-  // file_out << footForces[9] << " " << footForces[10] << " " << footForces[11];
-  // file_out.close();
+//   // file_out << (float)x.bodyPosition[0] << " " << (float)x.bodyPosition[1] << " " << (float)x.bodyPosition[2] <<  " " << (float)x.bodyOrientation[0] << " " << x.bodyOrientation[1] << " " << x.bodyOrientation[2] <<  " ";
+//   // file_out << (x.q)[0] << " " << (x.q)[1] << " " << (x.q)[2] << " " << (x.q)[3] << " " << (x.q)[4] << " " << (x.q)[5] << " " << (x.q)[6] <<  " " << (x.q)[7] <<  " " << (x.q)[8] <<  " " << (x.q)[9] << " " << (x.q)[10] << " " << (x.q)[11] << " ";
+//   // file_out << x.bodyVelocity[0] <<  " " << x.bodyVelocity[1] << " " << x.bodyVelocity[2] <<  " " << x.bodyOrientation[0] << " " << x.bodyOrientation[1] << " " << x.bodyOrientation[2] << " ";
+//   // file_out << (x.qd)[0] << " " << (x.qd)[1] << " " << (x.qd)[2] << " " << (x.qd)[3] << " " << (x.qd)[4] << " " << (x.qd)[5] << " " << (x.qd)[6] << " " << (x.qd)[7] << " " << (x.qd)[8] << " " << (x.qd)[9] << " " << (x.qd)[10] << " " << (x.qd)[11] << " ";
+//   // file_out << jointTorques[0] << " " << jointTorques[1] << " " << jointTorques[2] << " " << jointTorques[3] << " " << jointTorques[4] << " " << jointTorques[5] << " " << jointTorques[6] << " " << jointTorques[7] << " ";
+//   // file_out << jointTorques[8] << " " << jointTorques[9] << " " << jointTorques[10] << " " << jointTorques[11] << " ";
+//   // file_out << footForces[0] << " " << footForces[1] << " " << footForces[2] << " " << footForces[3] << " " << footForces[4] << " " << footForces[5] << " " << footForces[6] << " " << footForces[7] << " " << footForces[8] << " ";
+//   // file_out << footForces[9] << " " << footForces[10] << " " << footForces[11];
+//   // file_out.close();
 }
 
 template <typename Iterable> 
@@ -317,68 +315,4 @@ Json::Value iterable2json(Iterable const& cont) {
   }
   return v; 
 }
-
-
-/**
-template <typename T>
-void computeLegJacobian(Quadruped<T>& quad, Vec3<T>& q, Mat3<T> J, int leg) {
-  T l1 = quad._abadLinkLength;
-  T l2 = quad._hipLinkLength;
-  T l3 = quad._kneeLinkLength;
-  T l4 = quad._kneeLinkY_offset;
-  T sideSign = quad.getSideSign(leg);
-
-  T s1 = std::sin(q(0));
-  T s2 = std::sin(q(1));
-  T s3 = std::sin(q(2));
-
-  T c1 = std::cos(q(0));
-  T c2 = std::cos(q(1));
-  T c3 = std::cos(q(2));
-
-  T c23 = c2 * c3 - s2 * s3;
-  T s23 = s2 * c3 + c2 * s3;
-
-  if (J) {
-    J[0, 0] = 0;
-    J[0, 1] = l3 * c23 + l2 * c2;
-    J[0, 2] = l3 * c23;
-    J[1, 0] = l3 * c1 * c23 + l2 * c1 * c2 - (l1+l4) * sideSign * s1;
-    J[1, 1] = -l3 * s1 * s23 - l2 * s1 * s2;
-    J[1, 2] = -l3 * s1 * s23;
-    J[2, 0] = l3 * s1 * c23 + l2 * c2 * s1 + (l1+l4) * sideSign * c1;
-    J[2, 1] = l3 * c1 * s23 + l2 * c1 * s2;
-    J[2, 2] = l3 * c1 * s23;
-  }
-
- return J; 
-}
-
-
-Vec3<T> ComputeLegPosition(Quadruped<T>& quad, Vec3<T>& q, Mat3<T> p, int leg) {
-  T l1 = quad._abadLinkLength;
-  T l2 = quad._hipLinkLength;
-  T l3 = quad._kneeLinkLength;
-  T l4 = quad._kneeLinkY_offset;
-  T sideSign = quad.getSideSign(leg);
-
-  T s1 = std::sin(q(0));
-  T s2 = std::sin(q(1));
-  T s3 = std::sin(q(2));
-
-  T c1 = std::cos(q(0));
-  T c2 = std::cos(q(1));
-  T c3 = std::cos(q(2));
-
-  T c23 = c2 * c3 - s2 * s3;
-  T s23 = s2 * c3 + c2 * s3;
-    if (p) {
-    p[0] = l3 * s23 + l2 * s2;
-    p[1] = (l1+l4) * sideSign * c1 + l3 * (s1 * c23) + l2 * c2 * s1;
-    p[2] = (l1+l4) * sideSign * s1 - l3 * (c1 * c23) - l2 * c1 * c2;
-  }
-  return p; 
-}
-
-*/
 
