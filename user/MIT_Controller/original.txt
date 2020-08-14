@@ -1,0 +1,1207 @@
+Foot Posleg0 0.168856
+-0.115355
+   -0.003
+Foot Velleg0-0
+ 0
+-0
+Foot Accleg0 13.0841
+-17.1104
+ 88.8141
+Foot Posleg10
+0
+1
+Foot Velleg10
+0
+0
+Foot Accleg11
+0
+0
+Foot Posleg20
+0
+0
+Foot Velleg20
+1
+1
+Foot Accleg20
+0
+0
+Foot Posleg30
+0
+0
+Foot Velleg30
+0
+0
+Foot Accleg30
+1
+0
+Foot Posleg0 0.168856
+-0.115355
+   -0.003
+Foot Velleg0-0
+ 0
+-0
+Foot Accleg0 13.0841
+-17.1104
+ 88.8141
+Foot Posleg10
+0
+1
+Foot Velleg10
+0
+0
+Foot Accleg11
+0
+0
+Foot Posleg20
+0
+0
+Foot Velleg20
+1
+1
+Foot Accleg20
+0
+0
+Foot Posleg3-0.210127
+ 0.113443
+   -0.003
+Foot Velleg3-0
+-0
+-0
+Foot Accleg313.0743
+21.6665
+89.9474
+time!time!time!
+0.002000
+pBody_des
+  -0.0208375
+-0.000550259
+        0.29
+vBody_des
+0
+0
+0
+aBody_des
+0
+0
+0
+pBody_RPY_des
+          0
+          0
+-0.00210334
+vBody_Ori_des
+0
+0
+0
+Contact State
+0
+1
+1
+0
+State Estimate: pBody
+  -0.0208375
+-0.000550259
+    0.206174
+State Estimate: vBody
+0.00113022
+-0.0128009
+-0.0193179
+State Estimate: orientation
+    0.999648
+-0.000138625
+  -0.0264953
+ -0.00105424
+State Estimate: omegaBody
+  -0.0204602
+-0.000788676
+  0.00110816
+State Estimate: rpy
+-0.000221598
+   -0.052997
+ -0.00210334
+Foot Posleg0 0.168856
+-0.115355
+   -0.003
+Foot Velleg0-0
+ 0
+-0
+Foot Accleg0 13.0841
+-17.1104
+ 88.8141
+Foot Posleg1    0.20661
+   0.161649
+0.000114378
+Foot Velleg1-0.0261928
+-0.0343463
+  0.165171
+Foot Accleg1-12.8917
+-16.9048
+ 79.9636
+Foot Posleg20
+0
+0
+Foot Velleg20
+1
+1
+Foot Accleg20
+0
+0
+Foot Posleg3-0.210127
+ 0.113443
+   -0.003
+Foot Velleg3-0
+-0
+-0
+Foot Accleg313.0743
+21.6665
+89.9474
+Foot Posleg0 0.168856
+-0.115355
+   -0.003
+Foot Velleg0-0
+ 0
+-0
+Foot Accleg0 13.0841
+-17.1104
+ 88.8141
+Foot Posleg1    0.20661
+   0.161649
+0.000114378
+Foot Velleg1-0.0261928
+-0.0343463
+  0.165171
+Foot Accleg1-12.8917
+-16.9048
+ 79.9636
+Foot Posleg2   -0.17385
+  -0.174594
+0.000135747
+Foot Velleg2-0.0258444
+ 0.0420165
+  0.165171
+Foot Accleg2-12.7202
+ 20.6799
+ 79.9636
+Foot Posleg3-0.210127
+ 0.113443
+   -0.003
+Foot Velleg3-0
+-0
+-0
+Foot Accleg313.0743
+21.6665
+89.9474
+time!time!time!
+0.004000
+pBody_des
+  -0.0208375
+-0.000550259
+        0.29
+vBody_des
+0
+0
+0
+aBody_des
+0
+0
+0
+pBody_RPY_des
+          0
+          0
+-0.00238069
+vBody_Ori_des
+0
+0
+0
+Contact State
+0.0153846
+        0
+        0
+0.0153846
+State Estimate: pBody
+  -0.0208293
+-0.000582564
+    0.206139
+State Estimate: vBody
+-0.00141806
+ -0.0129441
+ -0.0307146
+State Estimate: orientation
+   0.999634
+0.000954716
+ -0.0270167
+-0.00116324
+State Estimate: omegaBody
+  0.0147654
+ 0.00815824
+-0.00232759
+State Estimate: rpy
+ 0.00197447
+ -0.0540376
+-0.00238069
+Foot Posleg0 0.168856
+-0.115355
+   -0.003
+Foot Velleg0-0
+ 0
+-0
+Foot Accleg0 13.0841
+-17.1104
+ 88.8141
+Foot Posleg1  0.206532
+  0.161547
+0.00060115
+Foot Velleg1-0.0517913
+-0.0674752
+  0.319854
+Foot Accleg1-12.5368
+-16.3333
+ 74.7201
+Foot Posleg2   -0.17385
+  -0.174594
+0.000135747
+Foot Velleg2-0.0258444
+ 0.0420165
+  0.165171
+Foot Accleg2-12.7202
+ 20.6799
+ 79.9636
+Foot Posleg3-0.210127
+ 0.113443
+   -0.003
+Foot Velleg3-0
+-0
+-0
+Foot Accleg313.0743
+21.6665
+89.9474
+Foot Posleg0 0.168856
+-0.115355
+   -0.003
+Foot Velleg0-0
+ 0
+-0
+Foot Accleg0 13.0841
+-17.1104
+ 88.8141
+Foot Posleg1  0.206532
+  0.161547
+0.00060115
+Foot Velleg1-0.0517913
+-0.0674752
+  0.319854
+Foot Accleg1-12.5368
+-16.3333
+ 74.7201
+Foot Posleg2  -0.173927
+  -0.174469
+0.000622518
+Foot Velleg2-0.0510102
+ 0.0826761
+  0.319854
+Foot Accleg2-12.3477
+ 20.0129
+ 74.7201
+Foot Posleg3-0.210127
+ 0.113443
+   -0.003
+Foot Velleg3-0
+-0
+-0
+Foot Accleg313.0743
+21.6665
+89.9474
+time!time!time!
+0.006000
+pBody_des
+  -0.0208375
+-0.000550259
+        0.29
+vBody_des
+0
+0
+0
+aBody_des
+0
+0
+0
+pBody_RPY_des
+          0
+          0
+-0.00202174
+vBody_Ori_des
+0
+0
+0
+Contact State
+0.0307692
+        0
+        0
+0.0307692
+State Estimate: pBody
+  -0.0208413
+-0.000579632
+    0.206076
+State Estimate: vBody
+-0.00381187
+ -0.0117121
+ -0.0503514
+State Estimate: orientation
+   0.999607
+-0.00117922
+ -0.0280022
+-0.00104272
+State Estimate: omegaBody
+ 0.0119697
+ 0.0143014
+-0.0132485
+State Estimate: rpy
+-0.00230274
+ -0.0560141
+-0.00202174
+Foot Posleg0 0.168856
+-0.115355
+   -0.003
+Foot Velleg0-0
+ 0
+-0
+Foot Accleg0 13.0841
+-17.1104
+ 88.8141
+Foot Posleg1  0.206401
+  0.161381
+0.00138681
+Foot Velleg1-0.0772077
+-0.0993685
+  0.464051
+Foot Accleg1-12.2453
+  -15.76
+ 69.4765
+Foot Posleg2  -0.173927
+  -0.174469
+0.000622518
+Foot Velleg2-0.0510102
+ 0.0826761
+  0.319854
+Foot Accleg2-12.3477
+ 20.0129
+ 74.7201
+Foot Posleg3-0.210127
+ 0.113443
+   -0.003
+Foot Velleg3-0
+-0
+-0
+Foot Accleg313.0743
+21.6665
+89.9474
+Foot Posleg0 0.168856
+-0.115355
+   -0.003
+Foot Velleg0-0
+ 0
+-0
+Foot Accleg0 13.0841
+-17.1104
+ 88.8141
+Foot Posleg1  0.206401
+  0.161381
+0.00138681
+Foot Velleg1-0.0772077
+-0.0993685
+  0.464051
+Foot Accleg1-12.2453
+  -15.76
+ 69.4765
+Foot Posleg2 -0.174055
+ -0.174265
+0.00140817
+Foot Velleg2-0.0756792
+  0.121771
+  0.464051
+Foot Accleg2-12.0029
+ 19.3131
+ 69.4765
+Foot Posleg3-0.210127
+ 0.113443
+   -0.003
+Foot Velleg3-0
+-0
+-0
+Foot Accleg313.0743
+21.6665
+89.9474
+time!time!time!
+0.008000
+pBody_des
+  -0.0208375
+-0.000550259
+        0.29
+vBody_des
+0
+0
+0
+aBody_des
+0
+0
+0
+pBody_RPY_des
+          0
+          0
+-0.00135831
+vBody_Ori_des
+0
+0
+0
+Contact State
+0.0461538
+        0
+        0
+0.0461538
+State Estimate: pBody
+  -0.0208527
+-0.000597271
+    0.205974
+State Estimate: vBody
+-0.00740765
+ -0.0114868
+  -0.063022
+State Estimate: orientation
+    0.999594
+-0.000624885
+  -0.0284766
+-0.000696129
+State Estimate: omegaBody
+  0.0388188
+  0.0308259
+-0.00285302
+State Estimate: rpy
+-0.00121158
+ -0.0569617
+-0.00135831
+Foot Posleg0 0.168856
+-0.115355
+   -0.003
+Foot Velleg0-0
+ 0
+-0
+Foot Accleg0 13.0841
+-17.1104
+ 88.8141
+Foot Posleg1  0.206219
+  0.161152
+0.00245036
+Foot Velleg1-0.102186
+-0.130024
+ 0.597761
+Foot Accleg1-11.9357
+-15.1872
+  64.233
+Foot Posleg2 -0.174055
+ -0.174265
+0.00140817
+Foot Velleg2-0.0756792
+  0.121771
+  0.464051
+Foot Accleg2-12.0029
+ 19.3131
+ 69.4765
+Foot Posleg3-0.210127
+ 0.113443
+   -0.003
+Foot Velleg3-0
+-0
+-0
+Foot Accleg313.0743
+21.6665
+89.9474
+Foot Posleg0 0.168856
+-0.115355
+   -0.003
+Foot Velleg0-0
+ 0
+-0
+Foot Accleg0 13.0841
+-17.1104
+ 88.8141
+Foot Posleg1  0.206219
+  0.161152
+0.00245036
+Foot Velleg1-0.102186
+-0.130024
+ 0.597761
+Foot Accleg1-11.9357
+-15.1872
+  64.233
+Foot Posleg2 -0.174232
+ -0.173985
+0.00247173
+Foot Velleg2-0.0997719
+  0.159311
+  0.597761
+Foot Accleg2-11.6537
+ 18.6081
+  64.233
+Foot Posleg3-0.210127
+ 0.113443
+   -0.003
+Foot Velleg3-0
+-0
+-0
+Foot Accleg313.0743
+21.6665
+89.9474
+time!time!time!
+0.010000
+pBody_des
+  -0.0208375
+-0.000550259
+        0.29
+vBody_des
+0
+0
+0
+aBody_des
+0
+0
+0
+pBody_RPY_des
+           0
+           0
+-0.000604722
+vBody_Ori_des
+0
+0
+0
+Contact State
+0.0615385
+        0
+        0
+0.0615385
+State Estimate: pBody
+  -0.0208635
+-0.000614259
+    0.205846
+State Estimate: vBody
+-0.0108355
+-0.0114514
+-0.0768762
+State Estimate: orientation
+    0.999597
+ -0.00110285
+  -0.0283496
+-0.000333275
+State Estimate: omegaBody
+ 0.0399451
+ 0.0466392
+0.00783256
+State Estimate: rpy
+ -0.00218945
+  -0.0567075
+-0.000604722
+Foot Posleg0 0.168856
+-0.115355
+   -0.003
+Foot Velleg0-0
+ 0
+-0
+Foot Accleg0 13.0841
+-17.1104
+ 88.8141
+Foot Posleg1  0.205985
+  0.160866
+0.00377086
+Foot Velleg1-0.126932
+-0.159211
+ 0.720984
+Foot Accleg1-11.6354
+-14.5943
+ 58.9895
+Foot Posleg2 -0.174232
+ -0.173985
+0.00247173
+Foot Velleg2-0.0997719
+  0.159311
+  0.597761
+Foot Accleg2-11.6537
+ 18.6081
+  64.233
+Foot Posleg3-0.210127
+ 0.113443
+   -0.003
+Foot Velleg3-0
+-0
+-0
+Foot Accleg313.0743
+21.6665
+89.9474
+Foot Posleg0 0.168856
+-0.115355
+   -0.003
+Foot Velleg0-0
+ 0
+-0
+Foot Accleg0 13.0841
+-17.1104
+ 88.8141
+Foot Posleg1  0.205985
+  0.160866
+0.00377086
+Foot Velleg1-0.126932
+-0.159211
+ 0.720984
+Foot Accleg1-11.6354
+-14.5943
+ 58.9895
+Foot Posleg2 -0.174456
+ -0.173634
+0.00379223
+Foot Velleg2-0.122841
+ 0.195007
+ 0.720984
+Foot Accleg2-11.2604
+ 17.8757
+ 58.9895
+Foot Posleg3-0.210127
+ 0.113443
+   -0.003
+Foot Velleg3-0
+-0
+-0
+Foot Accleg313.0743
+21.6665
+89.9474
+time!time!time!
+0.012000
+pBody_des
+  -0.0208375
+-0.000550259
+        0.29
+vBody_des
+0
+0
+0
+aBody_des
+0
+0
+0
+pBody_RPY_des
+          0
+          0
+0.000618202
+vBody_Ori_des
+0
+0
+0
+Contact State
+0.0769231
+        0
+        0
+0.0769231
+State Estimate: pBody
+  -0.0208806
+-0.000645239
+     0.20569
+State Estimate: vBody
+-0.0138928
+-0.0117669
+-0.0907318
+State Estimate: orientation
+   0.999585
+0.000625293
+  -0.028793
+0.000326728
+State Estimate: omegaBody
+0.0417647
+0.0579569
+0.0279053
+State Estimate: rpy
+  0.0012333
+ -0.0575943
+0.000618202
+Foot Posleg0 0.168856
+-0.115355
+   -0.003
+Foot Velleg0-0
+ 0
+-0
+Foot Accleg0 13.0841
+-17.1104
+ 88.8141
+Foot Posleg1 0.205697
+ 0.160526
+0.0053273
+Foot Velleg1-0.151456
+-0.186645
+ 0.833719
+Foot Accleg1-11.3378
+ -13.972
+  53.746
+Foot Posleg2 -0.174456
+ -0.173634
+0.00379223
+Foot Velleg2-0.122841
+ 0.195007
+ 0.720984
+Foot Accleg2-11.2604
+ 17.8757
+ 58.9895
+Foot Posleg3-0.210127
+ 0.113443
+   -0.003
+Foot Velleg3-0
+-0
+-0
+Foot Accleg313.0743
+21.6665
+89.9474
+Foot Posleg0 0.168856
+-0.115355
+   -0.003
+Foot Velleg0-0
+ 0
+-0
+Foot Accleg0 13.0841
+-17.1104
+ 88.8141
+Foot Posleg1 0.205697
+ 0.160526
+0.0053273
+Foot Velleg1-0.151456
+-0.186645
+ 0.833719
+Foot Accleg1-11.3378
+ -13.972
+  53.746
+Foot Posleg2 -0.174724
+ -0.173218
+0.00534867
+Foot Velleg2-0.145002
+ 0.228641
+ 0.833719
+Foot Accleg2-10.8547
+ 17.1158
+  53.746
+Foot Posleg3-0.210127
+ 0.113443
+   -0.003
+Foot Velleg3-0
+-0
+-0
+Foot Accleg313.0743
+21.6665
+89.9474
+time!time!time!
+0.014000
+pBody_des
+  -0.0208375
+-0.000550259
+        0.29
+vBody_des
+0
+0
+0
+aBody_des
+0
+0
+0
+pBody_RPY_des
+         0
+         0
+0.00245461
+vBody_Ori_des
+0
+0
+0
+Contact State
+0.0923077
+        0
+        0
+0.0923077
+State Estimate: pBody
+   -0.020899
+-0.000674951
+    0.205505
+State Estimate: vBody
+-0.0168296
+-0.0119017
+ -0.104524
+State Estimate: orientation
+   0.99959
+0.00102181
+-0.0285904
+0.00125502
+State Estimate: omegaBody
+ 0.035423
+0.0650178
+0.0305194
+State Estimate: rpy
+0.00197425
+ -0.057191
+0.00245461
+Foot Posleg0 0.168856
+-0.115355
+   -0.003
+Foot Velleg0-0
+ 0
+-0
+Foot Accleg0 13.0841
+-17.1104
+ 88.8141
+Foot Posleg1  0.205362
+   0.16013
+0.00709874
+Foot Velleg1-0.175048
+-0.213415
+ 0.935968
+Foot Accleg1-10.9944
+-13.4041
+ 48.5025
+Foot Posleg2 -0.174724
+ -0.173218
+0.00534867
+Foot Velleg2-0.145002
+ 0.228641
+ 0.833719
+Foot Accleg2-10.8547
+ 17.1158
+  53.746
+Foot Posleg3-0.210127
+ 0.113443
+   -0.003
+Foot Velleg3-0
+-0
+-0
+Foot Accleg313.0743
+21.6665
+89.9474
+Foot Posleg0 0.168856
+-0.115355
+   -0.003
+Foot Velleg0-0
+ 0
+-0
+Foot Accleg0 13.0841
+-17.1104
+ 88.8141
+Foot Posleg1  0.205362
+   0.16013
+0.00709874
+Foot Velleg1-0.175048
+-0.213415
+ 0.935968
+Foot Accleg1-10.9944
+-13.4041
+ 48.5025
+Foot Posleg2  -0.17504
+ -0.172733
+0.00712011
+Foot Velleg2-0.166926
+ 0.261343
+ 0.935968
+Foot Accleg2-10.4843
+ 16.4144
+ 48.5025
+Foot Posleg3-0.210127
+ 0.113443
+   -0.003
+Foot Velleg3-0
+-0
+-0
+Foot Accleg313.0743
+21.6665
+89.9474
+time!time!time!
+0.016000
+pBody_des
+  -0.0208375
+-0.000550259
+        0.29
+vBody_des
+0
+0
+0
+aBody_des
+0
+0
+0
+pBody_RPY_des
+        0
+        0
+0.0033651
+vBody_Ori_des
+0
+0
+0
+Contact State
+0.107692
+       0
+       0
+0.107692
+State Estimate: pBody
+  -0.0209174
+-0.000699246
+    0.205293
+State Estimate: vBody
+-0.0195893
+  -0.01186
+ -0.118219
+State Estimate: orientation
+   0.999611
+0.000499224
+  -0.027845
+  0.0016945
+State Estimate: omegaBody
+0.0450237
+0.0790079
+0.0403306
+State Estimate: rpy
+0.000905097
+ -0.0556987
+  0.0033651
+Foot Posleg0 0.168856
+-0.115355
+   -0.003
+Foot Velleg0-0
+ 0
+-0
+Foot Accleg0 13.0841
+-17.1104
+ 88.8141
+Foot Posleg1  0.204989
+  0.159662
+0.00906418
+Foot Velleg1-0.196768
+-0.241426
+  1.02773
+Foot Accleg1 -10.572
+-12.9714
+  43.259
+Foot Posleg2  -0.17504
+ -0.172733
+0.00712011
+Foot Velleg2-0.166926
+ 0.261343
+ 0.935968
+Foot Accleg2-10.4843
+ 16.4144
+ 48.5025
+Foot Posleg3-0.210127
+ 0.113443
+   -0.003
+Foot Velleg3-0
+-0
+-0
+Foot Accleg313.0743
+21.6665
+89.9474
+Foot Posleg0 0.168856
+-0.115355
+   -0.003
+Foot Velleg0-0
+ 0
+-0
+Foot Accleg0 13.0841
+-17.1104
+ 88.8141
+Foot Posleg1  0.204989
+  0.159662
+0.00906418
+Foot Velleg1-0.196768
+-0.241426
+  1.02773
+Foot Accleg1 -10.572
+-12.9714
+  43.259
+Foot Posleg2 -0.175412
+ -0.172165
+0.00908555
+Foot Velleg2-0.189624
+ 0.295063
+  1.02773
+Foot Accleg2-10.1881
+ 15.8531
+  43.259
+Foot Posleg3-0.210127
+ 0.113443
+   -0.003
+Foot Velleg3-0
+-0
+-0
+Foot Accleg313.0743
+21.6665
+89.9474
+time!time!time!
+0.018000
+pBody_des
+  -0.0208375
+-0.000550259
+        0.29
+vBody_des
+0
+0
+0
+aBody_des
+0
+0
+0
+pBody_RPY_des
+         0
+         0
+0.00163576
+vBody_Ori_des
+0
+0
+0
+Contact State
+0.123077
+       0
+       0
+0.123077
+State Estimate: pBody
+  -0.0209443
+-0.000717382
+    0.205051
+State Estimate: vBody
+-0.0226256
+-0.0116735
+ -0.131742
+State Estimate: orientation
+    0.999596
+-0.000506404
+  -0.0284093
+   0.0008025
+State Estimate: omegaBody
+0.0440817
+0.0782728
+0.0521527
+State Estimate: rpy
+-0.00105971
+ -0.0568254
+ 0.00163576
+Foot Posleg0 0.168856
+-0.115355
+   -0.003
+Foot Velleg0-0
+ 0
+-0
+Foot Accleg0 13.0841
+-17.1104
+ 88.8141
+Foot Posleg1 0.204581
+ 0.159122
+0.0112027
+Foot Velleg1-0.216842
+ -0.27019
+    1.109
+Foot Accleg1-10.1107
+-12.5981
+ 38.0155
+Foot Posleg2 -0.175412
+ -0.172165
+0.00908555
+Foot Velleg2-0.189624
+ 0.295063
+  1.02773
+Foot Accleg2-10.1881
+ 15.8531
+  43.259
+Foot Posleg3-0.210127
+ 0.113443
+   -0.003
+Foot Velleg3-0
+-0
+-0
+Foot Accleg313.0743
+21.6665
+89.9474
+Foot Posleg0 0.168856
+-0.115355
+   -0.003
+Foot Velleg0-0
+ 0
+-0
+Foot Accleg0 13.0841
+-17.1104
+ 88.8141
+Foot Posleg1 0.204581
+ 0.159122
+0.0112027
+Foot Velleg1-0.216842
+ -0.27019
+    1.109
+Foot Accleg1-10.1107
+-12.5981
+ 38.0155
+Foot Posleg2-0.175842
+-0.171515
+ 0.011224
+Foot Velleg2-0.212769
+ 0.329148
+    1.109
+Foot Accleg2-9.92075
+ 15.3472
+ 38.0155
+Foot Posleg3-0.210127
+ 0.113443
+   -0.003
+Foot Velleg3-0
+-0
+-0
+Foot Accleg313.0743
+21.6665
+89.9474
+time!time!time!
+0.020000
+pBody_des
+  -0.0208375
+-0.000550259
+        0.29
+vBody_des
+0
+0
+0
+aBody_des
+0
+0
+0
+pBody_RPY_des
+          0
+          0
+-0.00141542
+vBody_Ori_des
+0
+0
+0
+Contact State
+0.138462
+       0
+       0
+0.138462
+State Estimate: pBody
+    -0.02097
+-0.000745074
+    0.204783
+State Estimate: vBody
+-0.0252139
+-0.0122886
+ -0.145121
+State Estimate: orientation
+    0.999624
+  0.00125981
+   -0.027367
+-0.000672423
+State Estimate: omegaBody
+0.0508552
+0.0907438
+0.0608208
+State Estimate: rpy
+ 0.00255931
+  -0.054739
+-0.00141542
+Foot Posleg0 0.168856
+-0.115355
+   -0.003
+Foot Velleg0-0
+ 0
+-0
+Foot Accleg0 13.0841
