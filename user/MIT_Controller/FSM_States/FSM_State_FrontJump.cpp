@@ -27,8 +27,6 @@ FSM_State_FrontJump<T>::FSM_State_FrontJump(ControlFSMData<T>* _controlFSMData)
   f_ff << 0.f, 0.f, -25.f;
 
   _data_reader = new DataReader(this->_data->_quadruped->_robotType, FSM_StateName::FRONTJUMP);
-
-
   front_jump_ctrl_ = new FrontJumpCtrl<T>(_data_reader, this->_data->controlParameters->controller_dt);
   front_jump_ctrl_->SetParameter();
 

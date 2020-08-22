@@ -22,9 +22,9 @@ void FrontJumpCtrl<T>::OneStep(float _curr_time, bool b_preparation, LegControll
       command[leg].qdDes[jidx] = DataCtrl::_des_jvel[3 * leg + jidx];
       command[leg].kpJoint(jidx, jidx) = DataCtrl::_Kp_joint[jidx];
       command[leg].kdJoint(jidx, jidx) = DataCtrl::_Kd_joint[jidx];
-      std::cout << "tau" <<  "leg:"  << leg << "link :" << jidx << command[leg].tauFeedForward[jidx] << std::endl;
-      std::cout << "qDes" <<  "leg:"  << leg << "link :" << jidx << command[leg].qDes[jidx] << std::endl;
-      std::cout << "qdDes" <<  "leg:"  << leg << "link :" << jidx << command[leg].qdDes[jidx] << std::endl;
+      // std::cout << "tau" <<  "leg:"  << leg << "   " << "link :" << jidx << "   " << command[leg].tauFeedForward[jidx] << std::endl;
+      // std::cout << "qDes" <<  "leg:"  << leg << "   " << "link :" << jidx << "   " << command[leg].qDes[jidx] << std::endl;
+      // std::cout << "qdDes" <<  "leg:"  << leg <<"   " << "link :" << jidx << "   " <<  command[leg].qdDes[jidx] << std::endl;
 
     }
   }
@@ -33,7 +33,7 @@ void FrontJumpCtrl<T>::OneStep(float _curr_time, bool b_preparation, LegControll
 template <typename T>
 void FrontJumpCtrl<T>::_update_joint_command() {
   int pre_mode_duration(700);
-  int leg_clearance_iteration_front(240) ; 
+  int leg_clearance_iteration_front(240); 
   //int leg_clearance_iteration_front(180) ; 
   int leg_clearance_iteration(600);
   int leg_ramp_iteration(610);
@@ -84,7 +84,7 @@ void FrontJumpCtrl<T>::_update_joint_command() {
   float* tau = current_step + tau_offset;
   
   for (int i = 0; i < 23; i++) {
-     std::cout << current_step[i] << std::endl;
+     std::cout << "dataReader: " << current_step[i] << std::endl;
   }
  
   // INITIALIZE JOINT PARAMETERS AND TORQUES 
@@ -112,6 +112,30 @@ void FrontJumpCtrl<T>::_update_joint_command() {
   //pretty_print(tau_front, std::cout, "tau front");
   //pretty_print(tau_rear, std::cout, "tau rear");
   float s(0.);
+
+  std::cout << "PRINTING CURRENT_STEP!!!" << std::endl;
+  for (int index = 0; index < 22; index++) {
+    std::cout << current_step[index] << std::endl;
+  }
+
+  std::cout << "qDes:  " << std::endl;
+  for (int i = 0; i < 3; i++ ) {
+    std::cout << q_des_front[i]<<  " ";
+    std::cout << q_des_rear[i] <<"  ";
+  }
+
+  std::cout << "qdDes:  " << std::endl;
+  for (int i = 0; i < 3; i++ ) {
+    std::cout << qd_des_front[i]<<  " ";
+    std::cout << qd_des_rear[i]<<  " ";
+  }
+
+  std::cout << "tau:  " << std::endl;
+  for (int i = 0; i < 3; i++ ) {
+    std::cout << tau_front[i] <<  " ";
+    std::cout << tau_rear[i] <<  " ";
+  }
+  
 
   
   // CONTROL LEG_CLEARANCE_ITERATION_FRONT
@@ -229,7 +253,7 @@ void FrontJumpCtrl<T>::_update_joint_command() {
   DataCtrl::_des_jpos[6] = (-0.2);
   DataCtrl::_des_jpos[9] = (0.2);
 
-   }
+  }
 
   // Front Hip
   for (int i = 1; i < 6; i += 3) {

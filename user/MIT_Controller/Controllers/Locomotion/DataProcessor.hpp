@@ -24,26 +24,24 @@ class DataProcessor {
   EIGEN_MAKE_ALIGNED_OPERATOR_NEW
   Eigen::VectorXd ComputeJointVelocities(float t);
   Vec12<double> ComputeJointTorques(float t);
-  void WriteAsDatFile(Eigen::MatrixXd result, int i);
-  Mat3<T> computeLegJacobian(Quadruped<T>& quad, Vec3<T>& q, Mat3<T> J, int leg);
-  Vec3<T> computeLegPosition(Quadruped<T>& quad, Vec3<T>& q, Vec3<T> p, int leg);
-  
+  void WriteAsDatFile(Eigen::MatrixXd* result, int i);
+ 
 
 private:
     FloatingBaseModel<double> cheetahModel;
     FBModelState<double> x;
     Vec12<double> jointTorques;
+    DVec<double> genForce;
+    DVec<double> genForceInterp;
     SVec<double> fReturn;
     Json::Value opt;
     Json::Reader reader; 
     float t; // current timestamp
-    std::ofstream file_in; 
-    std::ofstream file_out; 
+    float time; 
+    // std::ofstream file_in; 
+    // std::ofstream file_out; 
     Vec12<double> footForces; 
-    
-
-    
- 
+    Eigen::MatrixXd* result; 
 };
 
 

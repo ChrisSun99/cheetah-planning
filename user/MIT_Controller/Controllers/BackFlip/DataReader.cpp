@@ -14,8 +14,8 @@ DataReader::DataReader(const RobotType& type, FSM_StateName stateNameIn) : _type
     }
     else if (stateNameIn == FSM_StateName::FRONTJUMP || stateNameIn == FSM_StateName::DIRECTCOLLOCATION) {
       //load_control_plan(THIS_COM "user/MIT_Controller/Controllers/FrontJump/front_jump_data.dat"); // front_jump_data.dat for succesfull test 1 file
-      load_control_plan(THIS_COM "config/front_jump_pitchup_v2.dat");
-      // load_control_plan(THIS_COM "config/locomotion.dat");
+      // load_control_plan(THIS_COM "config/front_jump_pitchup_v2.dat");
+      load_control_plan(THIS_COM "config/Tryout.dat");
       printf("[Front Jump DataReader] Setup for mini cheetah\n");
     }
   } else {
